@@ -1,5 +1,7 @@
 # EAT Demo IA Predectiva
 
+Adélie Celier y Mathilde Naudin
+
 ## Marketing Politics - Voter Persuasion 
 
 ### Caso elegido de los "182 Examples of Predictive Analytics" 
@@ -13,6 +15,7 @@
 
 <details>
 <summary>Campaña Obama 2012</summary>
+
 Para identificar a los votantes indecisos o propensos a no movilizarse, la campaña de Obama analizó datos de participación en elecciones anteriores, enfocándose en los votantes registrados que no habían votado en elecciones previas. Estos votantes eran considerados prioritarios para acciones de persuasión y movilización destinadas a aumentar su participación.
 
 La campaña de Obama también utilizó pruebas A/B de manera intensiva para probar diversas versiones de mensajes (correos electrónicos, anuncios, eslóganes) y medir su eficacia en términos de compromiso y persuasión. Por ejemplo, grupos de prueba recibían correos electrónicos con distintos temas e imágenes, lo que permitía al equipo medir las tasas de apertura y clics para seleccionar la versión más atractiva.
@@ -24,10 +27,11 @@ La campaña de Obama también utilizó pruebas A/B de manera intensiva para prob
 **Desventajas:**  
 - Aunque menos controvertido, el uso de datos ya planteaba cuestiones de privacidad, aunque estaba limitado a interacciones con la campaña.
 
----
+</details>
 
 <details>
 <summary>Campaña Trump 2016 y escándalo Cambridge Analytica</summary>
+
 La campaña de Trump buscó influir en los comportamientos electorales de manera más intensiva, aprovechando las divisiones y emociones dentro del electorado.
 
 **Estrategia:**  
