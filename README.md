@@ -291,6 +291,8 @@ El objetivo del proyecto es desarrollar un modelo de IA predictivo que identifiq
 
 ### Datos
 
+=> Ver el proyecto en el repositorio con los metodos de recuperación de datos. 
+
 Basándonos en la literatura, los repositorios y los casos revisados, incluyendo las campañas de Obama 2012 y Trump 2016, hemos identificado una serie de **variables de interés** cruciales para proyectos de marketing político predictivo. A continuación, presentamos un listado detallado de estas variables, incorporando los elementos discutidos, y detallamos las posibles fuentes de datos desde diversos sistemas de información gerencial especializados, como **CRM**, **ERP**, **MES**, **MRP**, entre otros.
 
 
