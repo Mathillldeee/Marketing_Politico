@@ -671,6 +671,110 @@ Estas variables permitirán construir un modelo predictivo sólido para segmenta
 
 </details>
 
+## Métodos 
+
+### Segmentación de los votantes francéces - Votantes influenciables
+
+<details>
+<summary>Jóvenes urbanos ecologistas</summary>
+
+**Por qué podrían cambiar de voto:**
+
+Este segmento, aunque potencialmente favorable a los temas ecológicos, puede verse influido si En Marche refuerza sus compromisos ambientales con promesas concretas. Macron podría haber perdido popularidad entre ellos debido a políticas consideradas insuficientes para responder a la emergencia climática.
+
+**Estrategia de influencia:**
+
+Difundir mensajes enfocados en acciones ambientales reforzadas (reducción de emisiones de carbono, inversiones en energías renovables, transición verde). Usar influencers ecologistas para convencer de que En Marche es el partido mejor posicionado para avanzar la ecología en el poder.
+
+</details>
+
+<details>
+<summary>Jóvenes profesionales en busca de seguridad económica</summary>
+
+**Por qué podrían cambiar de voto:**
+
+Estos votantes buscan principalmente estabilidad económica y seguridad laboral. La pandemia ha trastornado el mercado laboral, y muchos podrían verse atraídos por medidas de apoyo económico y empleo propuestas por partidos competidores.
+
+**Estrategia de influencia:**
+
+Destacar las políticas económicas de En Marche, como las iniciativas de apoyo a startups, ayuda a jóvenes emprendedores y medidas de reactivación. Valorar las reformas que facilitan la creación de empleos, mostrando que el partido se preocupa por el futuro de los jóvenes profesionales.
+
+</details>
+
+<details>
+<summary>Clases medias y trabajadoras en áreas rurales</summary>
+
+**Por qué podrían cambiar de voto:**
+
+Esta población es sensible a los temas de poder adquisitivo y acceso a servicios públicos, y podría sentir que En Marche no ha respondido lo suficiente a sus necesidades. Pueden verse atraídos por discursos populistas o más cercanos a sus preocupaciones diarias.
+
+**Estrategia de influencia:**
+
+Difundir mensajes tranquilizadores sobre medidas de apoyo a las familias, reducción de impuestos para la clase media e inversiones en infraestructuras rurales. Mostrar que En Marche entiende sus necesidades en términos de poder adquisitivo y desarrollo de áreas rurales.
+
+</details>
+
+<details>
+<summary>Jubilados y prejubilados preocupados por la seguridad social</summary>
+
+**Por qué podrían cambiar de voto:**
+
+Las reformas de pensiones propuestas por Macron en su primer mandato fueron percibidas como una amenaza para la estabilidad de las pensiones. Los partidos opositores podrían atraerlos jugando con esta inseguridad.
+
+**Estrategia de influencia:**
+
+Reforzar los mensajes sobre la protección de las pensiones, asegurando que la reforma de las pensiones está pensada para preservar el futuro manteniendo la estabilidad. Usar cifras y ejemplos concretos para disipar temores sobre las reformas y garantizar una seguridad social reforzada.
+
+</details>
+
+<details>
+<summary>Jóvenes votantes sensibles a cuestiones de justicia social e igualdad</summary>
+
+**Por qué podrían cambiar de voto:**
+
+Estos votantes pueden estar decepcionados por una falta percibida de iniciativas en favor de la justicia social y derechos de las minorías. Otros partidos más comprometidos en estos temas pueden atraerlos.
+
+**Estrategia de influencia:**
+
+Comunicar acciones contundentes en justicia social e inclusión, como reformas para la igualdad de oportunidades, lucha contra la discriminación y acceso equitativo a la educación. Mostrar que En Marche está comprometido con la promoción de la igualdad y justicia social, con iniciativas específicas para las minorías.
+
+</details>
+
+<details>
+<summary>Votantes en zonas periurbanas preocupados por la seguridad</summary>
+
+**Por qué podrían cambiar de voto:**
+
+Este segmento podría verse atraído por partidos más estrictos en temas de seguridad, especialmente si incidentes recientes han incrementado sus preocupaciones sobre seguridad local.
+
+**Estrategia de influencia:**
+
+Acentuar las medidas de seguridad pública, como el refuerzo de las fuerzas del orden y la inversión en programas de seguridad de proximidad. Mostrar que Macron es sensible a los problemas de seguridad y que implementa acciones concretas para las zonas periurbanas.
+
+</details>
+
+<details>
+<summary>Pequeñas empresas y autónomos</summary>
+
+**Por qué podrían cambiar de voto:**
+
+Buscan a menudo reformas fiscales y administrativas simplificadas. Otros partidos podrían captar su atención con promesas de reducción de cargas.
+
+**Estrategia de influencia:**
+
+Destacar las acciones de En Marche para apoyar a las pequeñas empresas, como alivios fiscales, simplificación administrativa y acceso facilitado a financiación para PYMEs. Mostrar que En Marche apoya a los emprendedores y se compromete a facilitar sus actividades.
+
+</details>
+
+#### Conclusión
+
+Al dirigirse a estos segmentos con mensajes personalizados y adaptados a sus preocupaciones, la campaña de En Marche podría atraer a votantes indecisos o que buscan un partido alineado con sus valores y necesidades actuales. Aprovechando los logros del primer mandato y reconociendo las preocupaciones actuales, es posible influir positivamente en estos perfiles de votantes para apoyar a Macron en su campaña de reelección.
+
+Cada segmento debe recibir mensajes a través de los canales más pertinentes para ellos (redes sociales, correos electrónicos, influencers, anuncios locales), maximizando así el alcance de la campaña.
+
+### Desarollo de modelos AI secificos por cada perfil. 
+
+### Desarollo de perfiles y créacion de un contenido adaptado
 
 
 
