@@ -8,7 +8,7 @@ Adélie Celier y Mathilde Naudin
 
 [Ver documento completo aquí](https://1drv.ms/b/s!AtNNGt4B6rm7gtZHJJy5f4p1Il9OjQ?e=v1bmu3)
 
-![Table 7 Voter Persuasion](Capture d’écran 2024-11-06 à 08.58.13.png)
+Table 7 - Voter Persuasion
 
 ---
 
