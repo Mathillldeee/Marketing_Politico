@@ -772,13 +772,57 @@ Al dirigirse a estos segmentos con mensajes personalizados y adaptados a sus pre
 
 Cada segmento debe recibir mensajes a través de los canales más pertinentes para ellos (redes sociales, correos electrónicos, influencers, anuncios locales), maximizando así el alcance de la campaña.
 
-### Desarollo de modelos AI secificos por cada perfil. 
 
-### Desarollo de perfiles y créacion de un contenido adaptado
+### Desarrollo de Modelos de IA Específicos para Cada Perfil
 
+<details>
+<summary><b>1. Identificación de Votantes Persuadibles</b></summary>
 
+<p>Utilizamos modelos predictivos para identificar a votantes persuadibles basándonos en variables clave derivadas de campañas exitosas como las de Obama y Cambridge Analytica.</p>
 
+#### Variables clave utilizadas:
 
+- **Demográficas**:
+  - Edad
+  - Género
+  - Nivel educativo
+  - Ingresos estimados
+  - Lugar de residencia (rural, urbano)
+
+- **Psicográficas**:
+  - Rasgos de personalidad (Modelo OCEAN)
+  - Valores e intereses personales
+  - Opiniones y creencias sobre temas clave
+
+- **Comportamentales**:
+  - Historial de votación
+  - Interacción en redes sociales (likes, compartidos, comentarios)
+  - Respuestas previas a mensajes de campaña (apertura de correos, clics)
+
+#### Algoritmos empleados:
+
+- **Regresión Logística**: Ideal para predecir la probabilidad de persuasión.
+- **Random Forest**: Captura relaciones complejas entre variables.
+- **Gradient Boosting Machines (XGBoost, LightGBM)**: Modelos de alta precisión.
+
+#### Proceso paso a paso:
+
+1. **Preparación de datos**: Se limpian y codifican las variables relevantes.
+2. **Entrenamiento del modelo**: Los datos se dividen en conjuntos de entrenamiento y prueba.
+3. **Evaluación del modelo**: Se usan métricas como precisión, AUC-ROC, y F1-score.
+
+</details>
+
+<details>
+<summary><b>2. Asignación de Puntuaciones a los Votantes (Scoring)</b></summary>
+
+<p>Asignamos a cada votante una puntuación basada en la probabilidad de que sea persuadido, utilizando las salidas del modelo predictivo.</p>
+
+#### Fórmula de puntuación:
+
+```math
+Score\ del\ Votante = (0.30 \times Historial\ de\ Votación) + (0.25 \times Interacción\ con\ la\ Campaña) +
+(0.20 \times Actividad\ en\ Redes\ Sociales) + (0.15 \times Variables\ Psicográficas) + (0.10 \times Variables\ Demográficas)
 
 
 
