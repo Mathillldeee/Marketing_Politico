@@ -296,7 +296,7 @@ El objetivo del proyecto es desarrollar un modelo de IA predictivo que identifiq
 Basándonos en la literatura, los repositorios y los casos revisados, incluyendo las campañas de Obama 2012 y Trump 2016, hemos identificado una serie de **variables de interés** cruciales para proyectos de marketing político predictivo. A continuación, presentamos un listado detallado de estas variables, incorporando los elementos discutidos, y detallamos las posibles fuentes de datos desde diversos sistemas de información gerencial especializados, como **CRM**, **ERP**, **MES**, **MRP**, entre otros.
 
 
-### Variables de Interés Encontradas en los Casos Revisados
+#### Variables de Interés Encontradas en los Casos Revisados
 
 
 <details>
@@ -353,7 +353,7 @@ Basándonos en la literatura, los repositorios y los casos revisados, incluyendo
 
 </details>
 
-### Posibles Fuentes de Datos desde Sistemas de Información Gerencial
+#### Posibles Fuentes de Datos desde Sistemas de Información Gerencial
 
 <details>
 <summary> 1. CRM (Customer Relationship Management)</summary>
@@ -422,7 +422,7 @@ Basándonos en la literatura, los repositorios y los casos revisados, incluyendo
 
 </details>
 
-### Conclusión
+#### Conclusión
 
 Estas variables permitirán construir un modelo predictivo sólido para segmentar a los votantes en un contexto de campaña presidencial. Al integrar datos demográficos, comportamentales, psicográficos, de campaña y contextuales, podemos:
 
@@ -434,9 +434,9 @@ Estas variables permitirán construir un modelo predictivo sólido para segmenta
 
 --- 
 
-# Capital Humano
+### Capital Humano
 
-## Tipos de Profesionales Fundamentales para el Proyecto
+#### Tipos de Profesionales Fundamentales para el Proyecto
 
 <details>
 <summary>1. Científicos de Datos</summary>
@@ -561,7 +561,7 @@ Estas variables permitirán construir un modelo predictivo sólido para segmenta
 
 ---
 
-## Habilidades Necesarias para Ejecutar el Plan
+#### Habilidades Necesarias para Ejecutar el Plan
 
 <details>
 <summary>1. Alfabetización en Datos (Data Literacy)</summary>
@@ -671,9 +671,9 @@ Estas variables permitirán construir un modelo predictivo sólido para segmenta
 
 </details>
 
-## Métodos 
+### Métodos 
 
-### Segmentación de los votantes francéces - Votantes influenciables
+#### Segmentación de los votantes francéces - Votantes influenciables
 
 <details>
 <summary>Jóvenes urbanos ecologistas</summary>
