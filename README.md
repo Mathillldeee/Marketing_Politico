@@ -824,6 +824,7 @@ Cada segmento debe recibir mensajes a través de los canales más pertinentes pa
 Score\ del\ Votante = (0.30 \times Historial\ de\ Votación) + (0.25 \times Interacción\ con\ la\ Campaña) +
 (0.20 \times Actividad\ en\ Redes\ Sociales) + (0.15 \times Variables\ Psicográficas) + (0.10 \times Variables\ Demográficas)
 
+<strong> 🔴 Ver los ejemplos en el espacio de codigos (codespace).</strong>
 
 
 
