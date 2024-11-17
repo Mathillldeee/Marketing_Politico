@@ -814,7 +814,9 @@ Cada segmento debe recibir mensajes a través de los canales más pertinentes pa
 </details>
 
 <details>
-<summary><b>2. Asignación de Puntuaciones a los Votantes (Scoring)</b></summary>
+<summary> <b>2. Asignación de Puntuaciones a los Votantes (Scoring)</b> </summary>
+
+<strong> 🔴 Ver los ejemplos en el espacio de codigos (codespace).</strong>
 
 <p>Asignamos a cada votante una puntuación basada en la probabilidad de que sea persuadido, utilizando las salidas del modelo predictivo.</p>
 
@@ -824,8 +826,5 @@ Cada segmento debe recibir mensajes a través de los canales más pertinentes pa
 Score\ del\ Votante = (0.30 \times Historial\ de\ Votación) + (0.25 \times Interacción\ con\ la\ Campaña) +
 (0.20 \times Actividad\ en\ Redes\ Sociales) + (0.15 \times Variables\ Psicográficas) + (0.10 \times Variables\ Demográficas)
 
-<strong> 🔴 Ver los ejemplos en el espacio de codigos (codespace).</strong>
-
-
-
+</details>
 
