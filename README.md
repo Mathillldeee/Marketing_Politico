@@ -799,6 +799,29 @@ Cada segmento debe recibir mensajes a través de los canales más pertinentes pa
   - Interacción en redes sociales (likes, compartidos, comentarios)
   - Respuestas previas a mensajes de campaña (apertura de correos, clics)
 
+#### Variables ya presente en los codigos existantes 
+   - DEM: Candidato apoyado por el anuncio (1 para el candidato principal, 0 para el oponente).
+   - ATT: Tipo de mensaje (1 para un ataque, 0 para un mensaje neutro o positivo).
+   - AD_POSITION: Posición del anuncio en una pausa publicitaria (1 para primera posición, 5 para la última).
+   - AD_LENGTH_IND: Duración del anuncio (1 para más de 30 segundos, 0 para 30 segundos o menos).
+   - slant: Inclinación del anuncio (apoyo u oposición al candidato).
+   - consistency: Coherencia del mensaje (entre 0 y 1, donde 1 indica una alta coherencia).
+   - WEEK, Day, TIME_WINDOW: Variables temporales que representan la semana, el día y la franja horaria de difusión.
+   - PROG_GENRE: Género del programa durante el cual se emite el anuncio (por ejemplo, "News", "Sports").
+   - NETWORK: Cadena de difusión del anuncio (por ejemplo, CNN, MSNBC).
+   - LOG_CAN_WOM_5_PRE y LOG_CAN_WOM_5_POST: Engagement antes y después del anuncio, medido en términos de "Word of Mouth" (boca a boca).
+
+#### Varaiables ficticias añadidas por la integración de redes sociales y la personalización de mensajes
+   - Platform: Tipo de red social donde se difunde el mensaje (Facebook, Instagram, Twitter, TikTok).
+   - Engagement_Rate: Tasa de engagement en redes sociales (porcentaje de interacciones respecto al número de vistas).
+   - Influencer_Boost: Indicador de compartición por un influencer o líder de opinión (1 = sí, 0 = no).
+   - Video_Length: Longitud del video o anuncio en segundos, especialmente para formatos cortos en redes sociales.
+   - Timing_Post: Hora de publicación del mensaje en la red social (por ejemplo, "Mañana", "Tarde", "Noche").
+   - Segment: Categoría de electores objetivo (por ejemplo, "Jóvenes Urbanos Ecologistas", "Clases Medias Rurales").
+   - Platform_Preference: Plataforma favorita de cada segmento de electores (por ejemplo, TikTok para los jóvenes, LinkedIn para los profesionales).
+   - Content_Preference: Tipo de contenido que interesa a cada segmento (por ejemplo, "Ecología", "Justicia Social").
+   - Engagement_Sensitivity: Nivel de sensibilidad de cada segmento al engagement (valores de 1 a 5, donde 5 indica una alta receptividad).
+
 #### Algoritmos empleados:
 
 - **Regresión Logística**: Ideal para predecir la probabilidad de persuasión.
