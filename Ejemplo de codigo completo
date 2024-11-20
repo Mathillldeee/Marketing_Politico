@@ -1,0 +1,99 @@
+###################################################################################
+### Configuración
+###################################################################################
+
+import pandas as pd
+import numpy as np
+import statsmodels.formula.api as smf
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+###################################################################################
+### 1. Variables e Importación de Datos
+###################################################################################
+
+### Ejemplo de datos ficticios segmentados para df_wom
+
+np.random.seed(123)
+df_wom = pd.DataFrame({
+    'DEM': np.random.choice([1, 0], 200, replace=True),
+    'ATT': np.random.choice([0, 1], 200, replace=True, p=[0.7, 0.3]),
+    'POSICION_ANUNCIO': np.random.choice(range(1, 6), 200, replace=True),
+    'DURACION_ANUNCIO_IND': np.random.choice([0, 1], 200, replace=True, p=[0.5, 0.5]),
+    'inclinacion': np.random.uniform(-1, 1, 200),
+    'consistencia': np.random.uniform(0, 1, 200),
+    'LOG_CAN_WOM_5_PRE': np.random.normal(3, 0.5, 200),
+    'LOG_CAN_WOM_5_POST': np.random.normal(3.5, 0.5, 200),
+    'Plataforma': np.random.choice(['Facebook', 'Instagram', 'Twitter', 'TikTok'], 200, replace=True),
+    'Tasa_Engagement': np.random.uniform(0, 5, 200),
+    'Impulso_Influencer': np.random.choice([0, 1], 200, replace=True, p=[0.8, 0.2]),
+    'Duracion_Video': np.random.choice([15, 30, 45, 60], 200, replace=True),
+    'Momento_Publicacion': np.random.choice(['Mañana', 'Tarde', 'Noche'], 200, replace=True),
+    'Segmento': np.random.choice(['Jóvenes Urbanos Ecologistas', 'Clases Medias Rurales', 'Jóvenes Profesionales', 'Jubilados'], 200, replace=True),
+    'Preferencia_Plataforma': np.random.choice(['TikTok', 'Instagram', 'Facebook', 'LinkedIn'], 200, replace=True),
+    'Preferencia_Contenido': np.random.choice(['Ecología', 'Justicia Social', 'Seguridad Económica', 'Seguridad Pública'], 200, replace=True),
+    'Sensibilidad_Engagement': np.random.choice(range(1, 6), 200, replace=True)
+})
+
+### Variables temporales y contextuales
+df_wom['SEMANA'] = np.random.choice(range(1, 53), 200, replace=True)
+df_wom['Dia'] = np.random.choice(['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'], 200, replace=True)
+df_wom['VENTANA_TIEMPO'] = np.random.choice(['Mañana', 'Tarde', 'Noche'], 200, replace=True)
+df_wom['GENERO_PROG'] = np.random.choice(['Noticias', 'Deportes', 'Entretenimiento'], 200, replace=True)
+df_wom['CANAL'] = np.random.choice(['CNN', 'MSNBC', 'BBC', 'France 24'], 200, replace=True)
+
+###################################################################################
+### 2. Estadísticas Descriptivas para Medir la Eficacia por Segmento
+###################################################################################
+
+### Cálculo de estadísticas descriptivas por Segmento, Plataforma y Preferencias de Contenido
+
+estadisticas_descriptivas = df_wom.groupby(['Segmento', 'Plataforma', 'Preferencia_Contenido']).agg(
+    engagement_promedio=('LOG_CAN_WOM_5_POST', lambda x: (x - df_wom['LOG_CAN_WOM_5_PRE']).mean()),
+    sensibilidad_engagement_promedio=('Sensibilidad_Engagement', 'mean'),
+    consistencia_promedio=('consistencia', 'mean'),
+    total_anuncios=('DEM', 'size')
+).reset_index()
+print(estadisticas_descriptivas)
+
+###################################################################################
+### 3. Regresiones Segmentadas con Personalización de Mensajes
+###################################################################################
+
+### Modelización del impacto de los mensajes personalizados en función de la coherencia, la posición,
+### la inclinación (slant), y las preferencias por plataforma y segmento
+
+formula_1 = 'LOG_CAN_WOM_5_POST ~ LOG_CAN_WOM_5_PRE + DEM + DURACION_ANUNCIO_IND + POSICION_ANUNCIO + \
+             inclinacion + consistencia + ATT + Plataforma + Segmento + Preferencia_Plataforma + \
+             Preferencia_Contenido + Sensibilidad_Engagement'
+
+modelo_1 = smf.ols(formula=formula_1, data=df_wom).fit()
+print(modelo_1.summary())
+
+### Modelización con interacciones para medir el impacto de la personalización en cada segmento
+
+formula_2 = 'LOG_CAN_WOM_5_POST ~ LOG_CAN_WOM_5_PRE + DEM + DURACION_ANUNCIO_IND + POSICION_ANUNCIO + \
+             inclinacion + consistencia + ATT * Segmento + Plataforma * Preferencia_Plataforma + \
+             Preferencia_Contenido * Sensibilidad_Engagement'
+
+modelo_2 = smf.ols(formula=formula_2, data=df_wom).fit()
+print(modelo_2.summary())
+
+###################################################################################
+### 4. Visualización del Impacto de los Mensajes por Segmento y Plataforma
+###################################################################################
+
+plt.figure(figsize=(10, 6))
+sns.barplot(
+    data=df_wom,
+    x='Segmento',
+    y=df_wom['LOG_CAN_WOM_5_POST'] - df_wom['LOG_CAN_WOM_5_PRE'],
+    hue='Plataforma',
+    ci='sd'
+)
+plt.title("Impacto de los Mensajes Personalizados en el Engagement por Segmento y Plataforma")
+plt.xlabel("Segmento de Votantes")
+plt.ylabel("Cambio Promedio de Engagement (Word of Mouth)")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()

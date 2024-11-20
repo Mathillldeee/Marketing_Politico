@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def visualizar_puntuaciones(scores):
+    sns.histplot(scores, kde=True, color='blue')
+    plt.title("Distribución de Puntuaciones de Persuasión")
+    plt.xlabel("Puntuación de Persuasión")
+    plt.ylabel("Número de Votantes")
+    plt.show()
+
+# Ejemplo de uso con datos simulados
+scores_simulados = [0.2, 0.3, 0.6, 0.8, 0.9]
+visualizar_puntuaciones(scores_simulados)

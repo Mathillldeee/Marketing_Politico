@@ -1,0 +1,11 @@
+def generar_mensaje(votante):
+    if votante['interes'] == 'ecología':
+        return f"Hola {votante['nombre']}, nuestro compromiso con el medio ambiente incluye reducir emisiones y promover energías renovables."
+    elif votante['interes'] == 'economía':
+        return f"Hola {votante['nombre']}, tenemos nuevas propuestas para generar empleo y apoyar a emprendedores."
+    else:
+        return f"Hola {votante['nombre']}, queremos compartir nuestras iniciativas que responden a tus preocupaciones."
+
+# Ejemplo de datos simulados
+votante = {'nombre': 'María', 'interes': 'ecología'}
+print(generar_mensaje(votante))
